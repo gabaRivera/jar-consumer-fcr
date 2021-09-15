@@ -1,0 +1,72 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /custom-path
+  
+spring:
+  profiles:
+    active:
+    - cert
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        temp:
+          use-jdbc-metadata-defaults: false
+        jdbc:
+          batch-size: 5
+        default-schema: public
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    hikari:
+      connectionTimeout: 400000
+      idle-timeout: 400000
+      max-lifetime: 400000
+      maximum-pool-size: 2000
+      minimum-idle: 100
+    url: ${AZ_DATABASE_NAME}
+    username: ${AZ_POSTGRESQL_USERNAME}
+    password: ${AZ_POSTGRESQL_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    consumer:
+      group-id: notificationTicketsDev
+      auto-offset-reset: latest
+    bootstrap-servers: cap-sg-prd-1.securegateway.appdomain.cloud:18007
+
+application:
+  swagger:
+    title: 'com.tdp.ms:consumerfcr'
+    description: 'Template from Genesis Framework to build microservices'
+    version: '1.0.0-SNAPSHOT'
+    contact:
+      name: Telefonica del Peru
+      url: https://www.telefonica.com.pe
+      email: correo@dominio.com
+    license:
+      type: copyright
+      url: https://www.telefonica.com.pe
+  topic:
+    name: queue-notification-tickets
+    
+external:
+  api:
+    customer-search-url: https://apisd.telefonica.com.pe/vp-tecnologia/bss/customerinformation/v2/searchCustomer
+    customer-search-client: ca529df8-364a-4c73-9117-19113c552830
+    oauth-on-premise-url: https://apisd.telefonica.com.pe/vp-tecnologia/bss/public/oauth2/token
+    oauth-on-premise-client: ca529df8-364a-4c73-9117-19113c552830
+    oauth-azure-url: https://login.microsoftonline.com/929616ff-818c-4541-b071-2bd6ab912e88/oauth2/token
+    oauth-azure-client: cf2e34f4-be9b-4ebf-9399-80a5706d653f
+    oauth-azure-resource: 21282c92-80d5-492c-94a0-721e77763092
+    oauth-azure-redirect-uri: https://apimngr-genesis-cert.portal.azure-api.net/docs/services/integrationoauth2/console/oauth2/authorizationcode/callback
+    oauth-azure-client-secret: rP3mU45pMMtK6sjhuD~7.z7T.8Z_s.2LS-
+    aldeamo-url: https://apimngr-genesis-cert.azure-api.net/traceability/AddresseeList/v1/addresseeList
+    aldeamo-suscription-key: caa80390fcd14eddb4fec1013ec7f201
+    notification-url: https://apisd.telefonica.com.pe/vp-tecnologia/bss/ws-notificationManagement/v1/notifyAllSubscribers
+    notification-client: ca529df8-364a-4c73-9117-19113c552830
+    whats-app-url: https://apimngr-genesis-cert.azure-api.net/notificationwhatsapp/V1/recieveResponse
+    whats-app-subscription-key: 770b2101d2d1444fa7b5a080363c7ad6
+    unica-user: UserTrazabilidad
+    unica-application: Trazabilidad

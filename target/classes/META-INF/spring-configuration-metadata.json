@@ -1,0 +1,152 @@
+{
+  "groups": [
+    {
+      "name": "external.api",
+      "type": "com.tdp.ms.consumerfcr.config.PropertiesConfig",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "application.catalog-error.subscription-key",
+      "type": "java.lang.String",
+      "description": "A description for 'application.catalog-error.subscription-key'"
+    },
+    {
+      "name": "application.catalog-error.url",
+      "type": "java.lang.String",
+      "description": "A description for 'application.catalog-error.url'"
+    },
+    {
+      "name": "application.swagger.contact.email",
+      "type": "java.lang.String",
+      "description": "A description for 'application.swagger.contact.email'"
+    },
+    {
+      "name": "application.swagger.contact.name",
+      "type": "java.lang.String",
+      "description": "A description for 'application.swagger.contact.name'"
+    },
+    {
+      "name": "application.swagger.contact.url",
+      "type": "java.lang.String",
+      "description": "A description for 'application.swagger.contact.url'"
+    },
+    {
+      "name": "application.swagger.description",
+      "type": "java.lang.String",
+      "description": "A description for 'application.swagger.description'"
+    },
+    {
+      "name": "application.swagger.license.type",
+      "type": "java.lang.String",
+      "description": "A description for 'application.swagger.license.type'"
+    },
+    {
+      "name": "application.swagger.license.url",
+      "type": "java.lang.String",
+      "description": "A description for 'application.swagger.license.url'"
+    },
+    {
+      "name": "application.swagger.title",
+      "type": "java.lang.String",
+      "description": "A description for 'application.swagger.title'"
+    },
+    {
+      "name": "application.swagger.version",
+      "type": "java.lang.String",
+      "description": "A description for 'application.swagger.version'"
+    },
+    {
+      "name": "application.topic.name",
+      "type": "java.lang.String",
+      "description": "A description for 'application.topic.name'"
+    },
+    {
+      "name": "external.api.aldeamo-suscription-key",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.aldeamo-url",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.customer-search-client",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.customer-search-url",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.notification-client",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.notification-url",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.oauth-azure-client",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.oauth-azure-client-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.oauth-azure-redirect-uri",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.oauth-azure-resource",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.oauth-azure-url",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.oauth-on-premise-client",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.oauth-on-premise-url",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.unica-application",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.unica-user",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.whats-app-subscription-key",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    },
+    {
+      "name": "external.api.whats-app-url",
+      "type": "java.lang.String",
+      "sourceType": "com.tdp.ms.consumerfcr.config.PropertiesConfig"
+    }
+  ],
+  "hints": []
+}

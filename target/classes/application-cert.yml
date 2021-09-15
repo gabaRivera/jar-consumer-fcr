@@ -1,0 +1,41 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+        jdbc:
+          batch_size: 5
+        default_schema: public
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    hikari:
+      connectionTimeout: 400000
+      idle-timeout: 400000
+      max-lifetime: 400000
+      maximum-pool-size: 2000
+      minimum-idle: 100
+    url: jdbc:postgresql://psql-trazabilidad-dev.postgres.database.azure.com:5432/faults_db
+    username: sysadmin@psql-trazabilidad-dev
+    password: pgAdm1nD3v5454
+    driverClassName: org.postgresql.Driver
+  kafka:
+    consumer:
+      group-id: ADTestTraza
+      auto-offset-reset: earliest
+    bootstrap-servers: cap-sg-prd-1.securegateway.appdomain.cloud:18007
+
+external:
+  api:
+    customerSearchUrl: https://apisd.telefonica.com.pe/vp-tecnologia/bss/customerinformation/v2/searchCustomer
+    customerSearchClient: ca529df8-364a-4c73-9117-19113c552830
+    oauthOnPremiseUrl: https://apisd.telefonica.com.pe/vp-tecnologia/bss/public/oauth2/token
+    oauthOnPremiseClient: ca529df8-364a-4c73-9117-19113c552830
+    oauthAzureUrl: https://login.microsoftonline.com/929616ff-818c-4541-b071-2bd6ab912e88/oauth2/token
+    oauthAzureClient: cf2e34f4-be9b-4ebf-9399-80a5706d653f
+    oauthAzureResource: 21282c92-80d5-492c-94a0-721e77763092
+    oauthAzureRedirectUri: https://apimngr-genesis-cert.portal.azure-api.net/docs/services/integrationoauth2/console/oauth2/authorizationcode/callback
+    oauthAzureClientSecret: rP3mU45pMMtK6sjhuD~7.z7T.8Z_s.2LS-
+    aldeamoUrl: https://apimngr-genesis-cert.azure-api.net/traceability/AddresseeList/v1/addresseeList
+    aldeamoSuscriptionKey: caa80390fcd14eddb4fec1013ec7f201

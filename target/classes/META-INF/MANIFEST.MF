@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 16
+Specification-Vendor: Telefonica del Peru
+Implementation-Version: 1.0.0-SNAPSHOT
+Implementation-Vendor: Telefonica del Peru
+Created-By: Maven Integration for Eclipse
+Implementation-Build-Time: 2021-09-15T15:10:20Z
+Implementation-Title: com.tdp.ms.consumerfcr
+Specification-Title: com.tdp.ms:consumerfcr
+Specification-Version: 1.0.0-SNAPSHOT
+X-Git-SHA-1: 01257d8
+
